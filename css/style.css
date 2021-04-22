@@ -1,0 +1,470 @@
+body, html {
+  height: 100%;
+}
+
+/*
+#preloader {
+    position:fixed;
+    left:0;
+    top:0;
+    z-index:99999999999;
+    width:100%;
+    height:100%;
+    overflow:visible;
+    background: url('../images/squares.gif') no-repeat center center;
+    background-size: 5%;
+}
+*/
+
+.read-more-button{
+  padding: 0px;
+  width: 15px;
+  display: inline-block;
+  content: url('../logos/read_more_2.svg');
+}
+.read-more-button:hover{
+  opacity: 50%;
+}
+
+.details{
+  content: url('../logos/read_more_2.svg');
+}
+
+/* define menu elements */
+.menu-button,.menu-wrap {
+	position:fixed;
+	width:2.5em;
+	height:2.25em;
+	font-size:1.5em;
+	/*-webkit-transform:translate3d(1.5em,1.5em,0);
+	transform: translate3d(1.5em,1.5em,0);*/
+}
+
+
+/* Menu Button */
+.menu-button {
+	z-index:1000;
+	margin:0;
+	padding:0;
+	border:none;
+	text-indent:2.5em;
+	color:transparent;
+	background:transparent;
+}
+.menu-button::before {
+	position:absolute;
+	top:0.5em;
+	right:0.5em;
+	bottom:0.5em;
+	left:0.5em;
+	background: linear-gradient(#4285F4 20%,rgba(0, 0, 0, 0) 20%,rgba(0, 0, 0, 0) 40%,#4285F4 40%,#4285F4 60%,rgba(0, 0, 0, 0) 60%,rgba(0, 0, 0, 0) 80%,#4285F4 80%);
+	content:'';
+}
+.menu-button:hover {
+	opacity: 0.6;
+}
+/* Menu */
+.menu-wrap {
+	z-index:999;
+	background: rgba(255, 255, 255, 1);
+	/*-webkit-transition:width 0.4s,height 0.4s,-webkit-transform 0.4s;
+	transition:width 0.4s,height 0.4s,transform 0.4s;
+	-webkit-transition-timing-function:cubic-bezier(0.7,0,0.3,1);
+	transition-timing-function:cubic-bezier(0.7,0,0.3,1);*/
+}
+.menu {
+	height:100%;
+	overflow:hidden;
+	font-size:0.75em;
+}
+
+
+.bg { 
+  /* The image used */
+  background-image:url('../images/forrest_bombi.jpg');
+
+  /* Full height */
+  height:500px;
+  /*width:100%;*/
+  padding: 0;
+  border:0;
+  margin:0;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position:relative;
+  opacity: 25%;
+}
+
+.header-photo{
+  width:100%;
+  height:200px;
+  background-color:rgba(0,0,0,0);
+  position:relative;
+  bottom:330px;
+  left:0;
+  right:0;
+  text-align:center;
+  color:white;
+  opacity: 100%;
+}
+
+.header-text{
+  width:100%;
+  height:100px;
+  background-color:rgba(0,0,0,0);
+  position:relative;
+  bottom:330px;
+  left:0;
+  right:0;
+  text-align:center;
+  /*color:white;*/
+  color:black;
+  opacity: 100%;
+}
+
+.footer{
+  width:110%;
+  min-height:100px;
+  background-color:rgba(0,0,0,0.9);
+  /*position:relative;
+  bottom:300px;
+  left:0;
+  right:0;*/
+  text-align:left;
+  /*color:white;*/
+  color:gray;
+  opacity: 100%;
+}
+.footer-copyright{
+  width:100%;
+  height:25px;
+  background-color:rgba(0,0,0,1);
+  /*position:relative;
+  bottom:300px;
+  left:0;
+  right:0;*/
+  text-align:center;
+  /*color:white;*/
+  color:gray;
+  opacity: 100%;
+}
+
+.myPhoto{
+    width:100%;
+    
+}
+
+.talks-links{
+  color:#000000;
+  text-decoration: none;
+}
+.talks-links:hover{
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+.my-link-bit {
+  /*color: #FFFFFF;/*#dc3545;*/
+  color: #000000;/*#dc3545;*/
+  text-decoration: none;
+}
+
+.my-link-bit:hover, .link-danger:focus {
+  color: #b02a37;
+  text-decoration: none;/*underline;*/
+}
+.my-link-upb {
+  /*color: #FFFFFF;/*#dc3545;*/
+  color: #000000;/*#dc3545;*/
+  text-decoration: none;
+}
+.my-link-upb:hover, .link-danger:focus {
+  color: #4285F4;
+  text-decoration: none;/*underline;*/
+}
+
+
+
+.link-logos{
+  padding: 0px;
+  width: 20px;
+  display: inline-block;
+  /*padding: 10px;*/
+  /*padding: 10px;
+  font-size: 25px;
+  width: 25px;
+  text-align: center;
+  text-decoration: none;*/
+}
+
+.link-logos:hover{
+  opacity: 0.5
+}
+
+.scholar-logo {
+  content: url('../logos/scholar.svg');
+}
+
+.ip-logo{
+  content: url('../logos/ip.svg')
+}
+
+.twitter-logo{
+  content: url('../logos/twitter.svg');
+}
+
+.mail-logo{
+  content: url('../logos/envelope.svg');
+}
+
+.linkedin-logo{
+  content: url('../logos/linkedin.svg')
+}
+
+.link-logo{
+  content: url('../logos/link.svg')
+}
+
+.github-logo{
+  content: url('../logos/github.svg')
+}
+
+.student-logo{
+  width: 50px;
+  /*margin-right: auto;*/
+  display: inline-block;
+  content: url('../logos/student.svg')
+}
+.graduated-logo{
+  width: 50px;
+  display: inline-block;
+  content: url('../logos/graduation_cap.svg')
+}
+
+.upb-logo{
+  width:75px;
+  display: inline-block;
+  content: url('../logos/logo_upb.png')
+}
+
+.bit-logo{
+  width: 75px;
+  display: inline-block;
+  content: url('../logos/bit.png')
+}
+
+.unibuc-logo{
+  width: 75px;
+  display: inline-block;
+  content: url('../logos/logo-unibuc.png')
+}
+
+.xperi-logo{
+  width: 100px;
+  display: inline-block;
+  content: url('../logos/xperi.svg')
+}
+
+.imar-logo{
+  width: 75px;
+  display: inline-block;
+  content: url('../logos/real_imar.jpeg');
+}
+
+.reviewer-logo{
+  width: 75px;
+  display: inline-block;
+  content: url('../logos/reviewer.png');
+}
+
+.eeml-logo{
+  width: 100px;
+  display: inline-block;
+  content: url('../logos/eeml_white.png');
+}
+
+.lotso-logo{
+  width: 25px;
+  display: inline-block;
+  content: url('../images/lotso.png');
+}
+
+/**
+ * Profile image component
+ */
+.profile-header-container{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.profile-header-img {
+    padding: 54px;
+}
+
+.profile-header-img > img.img-circle {
+    width: 120px;
+    height: 120px;
+    border: 3px solid #51D2B7;
+}
+
+.profile-header {
+    margin-top: 43px;
+}
+
+/**
+ * Ranking component
+ */
+.rank-label-container {
+    margin-top: -19px;
+    /* z-index: 1000; */
+    text-align: center;
+}
+
+.label.label-default.rank-label {
+    background-color: rgb(81, 210, 183);
+    padding: 5px 10px 5px 10px;
+    border-radius: 27px;
+}
+
+
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+/* Top left text */
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+/* Top right text */
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+/* Bottom right text */
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.carousel-control-prev-icon {
+    left: -50px;
+    border-bottom: 0;
+    height:100px;
+    background-image: url('/logos/prev.svg');
+}
+ 
+.carousel-control-next-icon {
+    right: -50px;
+    border-bottom: 0;
+    height:100px;
+    background-image: url('/logos/next.svg');
+}
+
+.carousel-indicators .inactive {
+  background-color: rgba(66, 133, 244, 0.25);
+}
+
+.carousel-indicators .active {
+  background-color: #4285F4;
+}
+
+
+
+
+
+/* The image containers*/
+.img-container {
+  width: 100%;
+  max-width: 750px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+/* Add a pseudo element to keep the aspect ratio*/
+.img-container::after {
+  content: "";
+  display: block;
+  padding-bottom: calc(900% / 16);  /* Define ratio here*/
+}
+
+/* Stretch the images over the container and keep them contained*/
+.img-container > * {
+  position: absolute;
+  top: var(--offset, 0);
+  left: var(--offset, 0);
+  width: calc(100% - 2 * var(--offset, 0px));
+  height: calc(100% - 2 * var(--offset, 0px));
+  object-fit: contain;
+}
+
+/*
+// Blur the background image and cover the whole container
+// Use the negative blur value as offset to prevent the blur 
+// from mixing with the document background color
+*/
+.img-blur {
+  --blur: 20px;
+  --offset: calc(-1 * var(--blur));
+  object-fit: cover;
+  filter: blur(var(--blur));
+}
+
+/* The image containers*/
+.carousel-img-container {
+  width: 100%;
+  height: 500px;
+  /*max-width: 750px;*/
+  overflow: hidden;
+  /*margin-bottom: 2rem;*/
+}
+
+/* Add a pseudo element to keep the aspect ratio*/
+
+.carousel-img-container::after {
+  content: "";
+  display: block;
+  padding-bottom: calc(900% / 16); 
+}
+
+/* Stretch the images over the container and keep them contained*/
+.carousel-img-container > * {
+  position: absolute;
+  top: var(--offset, 0);
+  left: var(--offset, 0);
+  width: calc(100% - 2 * var(--offset, 0px));
+  height: calc(100% - 2 * var(--offset, 0px));
+  object-fit: contain;
+}
+
+/*
+// Blur the background image and cover the whole container
+// Use the negative blur value as offset to prevent the blur 
+// from mixing with the document background color
+*/
+.carousel-img-blur {
+  --blur: 20px;
+  --offset: calc(-1 * var(--blur));
+  object-fit: cover;
+  filter: blur(var(--blur));
+}

@@ -81,7 +81,8 @@ body, html {
 
 .bg { 
   /* The image used */
-  background-image:url('../images/forrest_bombi.jpg');
+  /*background-image:url('../images/forrest_bombi.jpg');*/
+  background-image:url('../images/forrest.jpg');
 
   /* Full height */
   height:500px;

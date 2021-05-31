@@ -54,7 +54,7 @@
 
 @media screen {
   .navbar.responsive a { display: inline-block;}
-  .sticky-header.responsive {background-color: whitesmoke;}
+  .sticky-header.responsive {background-color: rgba(245, 245, 245, 0.9);}
 }
 
 @media screen{

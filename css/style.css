@@ -2,6 +2,33 @@ body, html {
   height: 100%;
 }
 
+h1.mytitle {
+  color:  #4285F4;
+  text-align: center;
+}
+
+h3.mytitle {
+  color:  #cc6fe0;
+  text-align: left;
+}
+
+h4.mytitle {
+  color:  #cc6fe0;
+  text-align: left;
+}
+
+/* ff5ca5 */ 
+hr.myline {
+  border: 1px solid #4285F4;
+}
+
+h5.publication{
+  color: #ff5ca5;
+}
+h6.publication{
+  color: #ff5ca5;
+}
+
 /*
 #preloader {
     position:fixed;
@@ -215,6 +242,10 @@ body, html {
 
 .twitter-logo{
   content: url('../logos/twitter.svg');
+}
+
+.cv-logo{
+  content: url('../logos/cv.svg');
 }
 
 .mail-logo{
